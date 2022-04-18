@@ -1,8 +1,9 @@
 # DS-coursework
-#Based upon https://github.com/sajeerzeji/SpringBoot-GRPC Commands for preparing the enviornment (Assuming you are in the main folder e.g. the one with the pom.xml file in it)
+Based upon https://github.com/sajeerzeji/SpringBoot-GRPC Commands for preparing the enviornment (Assuming you are in the main folder e.g. the one with the pom.xml file in it)
 
-#sudo apt update
-#sudp apt install default-jdk maven git
+1. sudo apt update
+2. sudp apt install default-jdk maven git
+
 #git clone https://github.com/zky339/DS-coursework.git
 #cd ECS796P-Lab4/grpc-server
 (From grpc-server folder) mvn package -Dmaven.test.skip=true
