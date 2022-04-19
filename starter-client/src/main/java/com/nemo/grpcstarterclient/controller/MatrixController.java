@@ -25,8 +25,8 @@ public class MatrixController {
 
     @GrpcClient("server-service")
     private MatrixServiceGrpc.MatrixServiceBlockingStub stub;
-//    @GrpcClient("server-service1")
-//    private MatrixServiceGrpc.MatrixServiceBlockingStub stub1;
+    @GrpcClient("server-service1")
+    private MatrixServiceGrpc.MatrixServiceBlockingStub stub1;
 //    @GrpcClient("server-service2")
 //    private MatrixServiceGrpc.MatrixServiceBlockingStub stub2;
 //
