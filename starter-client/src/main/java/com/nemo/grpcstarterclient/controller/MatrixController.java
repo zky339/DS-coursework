@@ -27,8 +27,8 @@ public class MatrixController {
     private MatrixServiceGrpc.MatrixServiceBlockingStub stub;
     @GrpcClient("server-service1")
     private MatrixServiceGrpc.MatrixServiceBlockingStub stub1;
-    @GrpcClient("server-service2")
-    private MatrixServiceGrpc.MatrixServiceBlockingStub stub2;
+//    @GrpcClient("server-service2")
+//    private MatrixServiceGrpc.MatrixServiceBlockingStub stub2;
 //
 //    private MatrixServiceGrpc.MatrixServiceBlockingStub stub3;
 //
@@ -194,18 +194,13 @@ public class MatrixController {
                 C21 = addM(grpcMatrixMultiply(A21, B11,stub), grpcMatrixMultiply(A22, B21,stub));
                 C22 = addM(grpcMatrixMultiply(A21, B12,stub), grpcMatrixMultiply(A22, B22,stub));
             }
-            else if(numberServer == 2){
+            else{
                 C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
                 C12 = addM(grpcMatrixMultiply(A11, B12,stub), grpcMatrixMultiply(A12, B22,stub));
                 C21 = addM(grpcMatrixMultiply(A21, B11,stub1), grpcMatrixMultiply(A22, B21,stub1));
                 C22 = addM(grpcMatrixMultiply(A21, B12,stub1), grpcMatrixMultiply(A22, B22,stub1));
             }
-            else {
-                C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
-                C12 = addM(grpcMatrixMultiply(A11, B12,stub1), grpcMatrixMultiply(A12, B22,stub1));
-                C21 = addM(grpcMatrixMultiply(A21, B11,stub1), grpcMatrixMultiply(A22, B21,stub1));
-                C22 = addM(grpcMatrixMultiply(A21, B12,stub2), grpcMatrixMultiply(A22, B22,stub2));
-            }
+
             
             
             
