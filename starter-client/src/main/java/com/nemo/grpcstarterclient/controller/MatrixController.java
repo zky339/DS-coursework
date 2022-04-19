@@ -190,8 +190,8 @@ public class MatrixController {
             C11 = new int[len/2][len/2];C12 = new int[len/2][len/2];C21 = new int[len/2][len/2];C22 = new int[len/2][len/2];
             C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
             C12 = addM(grpcMatrixMultiply(A11, B12,stub), grpcMatrixMultiply(A12, B22,stub));
-            C21 = addM(grpcMatrixMultiply(A21, B11,stub1), grpcMatrixMultiply(A22, B21,stub1));
-            C22 = addM(grpcMatrixMultiply(A21, B12,stub1), grpcMatrixMultiply(A22, B22,stub1));
+            C21 = addM(grpcMatrixMultiply(A21, B11,stub), grpcMatrixMultiply(A22, B21,stub));
+            C22 = addM(grpcMatrixMultiply(A21, B12,stub), grpcMatrixMultiply(A22, B22,stub));
             copyFromMatrix(c, 0, 0, C11);
             copyFromMatrix(c, 0, len/2, C12);
             copyFromMatrix(c, len/2, 0, C21);
