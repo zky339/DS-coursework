@@ -21,6 +21,7 @@ import java.util.ArrayList;
 @RequestMapping("")
 public class MatrixController {
     static Long footprint = 2L;
+    int numberServer;
 
     @GrpcClient("server-service")
     private MatrixServiceGrpc.MatrixServiceBlockingStub stub;
@@ -67,7 +68,7 @@ public class MatrixController {
             numberBlock = numberBlock * 8;
         }
 
-        int numberServer = Math.toIntExact((footprint * numberBlock) / deadline);
+        numberServer = Math.toIntExact((footprint * numberBlock) / deadline);
 
 
 
