@@ -188,18 +188,48 @@ public class MatrixController {
             
             C11 = new int[len/2][len/2];C12 = new int[len/2][len/2];C21 = new int[len/2][len/2];C22 = new int[len/2][len/2];
             
-            //if(numberServer == 1){
+            if(numberServer > 7){
+                C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub1));
+                C12 = addM(grpcMatrixMultiply(A11, B12,stub2), grpcMatrixMultiply(A12, B22,stub3));
+                C21 = addM(grpcMatrixMultiply(A21, B11,stub4), grpcMatrixMultiply(A22, B21,stub5));
+                C22 = addM(grpcMatrixMultiply(A21, B12,stub6), grpcMatrixMultiply(A22, B22,stub7));
+            }else if(numberServer > 6){
                 C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
-                C12 = addM(grpcMatrixMultiply(A11, B12,stub), grpcMatrixMultiply(A12, B22,stub));
-                C21 = addM(grpcMatrixMultiply(A21, B11,stub), grpcMatrixMultiply(A22, B21,stub));
-                C22 = addM(grpcMatrixMultiply(A21, B12,stub), grpcMatrixMultiply(A22, B22,stub));
-           // }
-           /* else{
+                C12 = addM(grpcMatrixMultiply(A11, B12,stub1), grpcMatrixMultiply(A12, B22,stub2));
+                C21 = addM(grpcMatrixMultiply(A21, B11,stub3), grpcMatrixMultiply(A22, B21,stub4));
+                C22 = addM(grpcMatrixMultiply(A21, B12,stub5), grpcMatrixMultiply(A22, B22,stub6));
+            }else if(numberServer > 5){
+                C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
+                C12 = addM(grpcMatrixMultiply(A11, B12,stub1), grpcMatrixMultiply(A12, B22,stub1));
+                C21 = addM(grpcMatrixMultiply(A21, B11,stub2), grpcMatrixMultiply(A22, B21,stub3));
+                C22 = addM(grpcMatrixMultiply(A21, B12,stub4), grpcMatrixMultiply(A22, B22,stub5));
+            }else if(numberServer > 4){
+                C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
+                C12 = addM(grpcMatrixMultiply(A11, B12,stub1), grpcMatrixMultiply(A12, B22,stub1));
+                C21 = addM(grpcMatrixMultiply(A21, B11,stub2), grpcMatrixMultiply(A22, B21,stub2));
+                C22 = addM(grpcMatrixMultiply(A21, B12,stub3), grpcMatrixMultiply(A22, B22,stub4));
+            }else if(numberServer > 3){
+                C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
+                C12 = addM(grpcMatrixMultiply(A11, B12,stub1), grpcMatrixMultiply(A12, B22,stub1));
+                C21 = addM(grpcMatrixMultiply(A21, B11,stub2), grpcMatrixMultiply(A22, B21,stub2));
+                C22 = addM(grpcMatrixMultiply(A21, B12,stub3), grpcMatrixMultiply(A22, B22,stub3));
+            }else if(numberServer > 2){
+                C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
+                C12 = addM(grpcMatrixMultiply(A11, B12,stub), grpcMatrixMultiply(A12, B22,stub1));
+                C21 = addM(grpcMatrixMultiply(A21, B11,stub1), grpcMatrixMultiply(A22, B21,stub2));
+                C22 = addM(grpcMatrixMultiply(A21, B12,stub2), grpcMatrixMultiply(A22, B22,stub2));
+            }else if(numberServer > 1){
                 C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
                 C12 = addM(grpcMatrixMultiply(A11, B12,stub), grpcMatrixMultiply(A12, B22,stub));
                 C21 = addM(grpcMatrixMultiply(A21, B11,stub1), grpcMatrixMultiply(A22, B21,stub1));
                 C22 = addM(grpcMatrixMultiply(A21, B12,stub1), grpcMatrixMultiply(A22, B22,stub1));
-           }*/
+            }else{
+                C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
+                C12 = addM(grpcMatrixMultiply(A11, B12,stub), grpcMatrixMultiply(A12, B22,stub));
+                C21 = addM(grpcMatrixMultiply(A21, B11,stub), grpcMatrixMultiply(A22, B21,stub));
+                C22 = addM(grpcMatrixMultiply(A21, B12,stub), grpcMatrixMultiply(A22, B22,stub));
+            }
+           
 
             
             
