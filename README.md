@@ -13,5 +13,4 @@ Based upon https://github.com/sajeerzeji/SpringBoot-GRPC Commands for preparing 
 10. (From grpc-client folder e.g. seperate ssh connection) chmod 777 mvnw
 11. (From grpc-client folder e.g. seperate ssh connection) ./mvnw spring-boot:run -Dmaven.test.skip=true
 12. rm -rf DS-coursework
-13. http://35.239.9.155:8082/add
-14. http://35.239.9.155:8082/multiply
+13. http://10.128.0.9:8091/index.html
