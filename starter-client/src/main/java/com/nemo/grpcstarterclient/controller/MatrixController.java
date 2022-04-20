@@ -27,18 +27,18 @@ public class MatrixController {
     private MatrixServiceGrpc.MatrixServiceBlockingStub stub;
     @GrpcClient("server-service1")
     private MatrixServiceGrpc.MatrixServiceBlockingStub stub1;
- //   @GrpcClient("server-service2")
- //   private MatrixServiceGrpc.MatrixServiceBlockingStub stub2;
- //   @GrpcClient("server-service3")
- //   private MatrixServiceGrpc.MatrixServiceBlockingStub stub3;
- //   @GrpcClient("server-service4")
- //   private MatrixServiceGrpc.MatrixServiceBlockingStub stub4;
- //   @GrpcClient("server-service5")
- //   private MatrixServiceGrpc.MatrixServiceBlockingStub stub5;
- //   @GrpcClient("server-service6")
- //   private MatrixServiceGrpc.MatrixServiceBlockingStub stub6;
- //   @GrpcClient("server-service7")
- //   private MatrixServiceGrpc.MatrixServiceBlockingStub stub7;
+    @GrpcClient("server-service2")
+    private MatrixServiceGrpc.MatrixServiceBlockingStub stub2;
+    @GrpcClient("server-service3")
+    private MatrixServiceGrpc.MatrixServiceBlockingStub stub3;
+    @GrpcClient("server-service4")
+    private MatrixServiceGrpc.MatrixServiceBlockingStub stub4;
+    @GrpcClient("server-service5")
+    private MatrixServiceGrpc.MatrixServiceBlockingStub stub5;
+    @GrpcClient("server-service6")
+    private MatrixServiceGrpc.MatrixServiceBlockingStub stub6;
+    @GrpcClient("server-service7")
+    private MatrixServiceGrpc.MatrixServiceBlockingStub stub7;
 
 
 
@@ -188,7 +188,7 @@ public class MatrixController {
             
             C11 = new int[len/2][len/2];C12 = new int[len/2][len/2];C21 = new int[len/2][len/2];C22 = new int[len/2][len/2];
             
-          /*  if(numberServer > 7){
+            if(numberServer > 7){
                 C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub1));
                 C12 = addM(grpcMatrixMultiply(A11, B12,stub2), grpcMatrixMultiply(A12, B22,stub3));
                 C21 = addM(grpcMatrixMultiply(A21, B11,stub4), grpcMatrixMultiply(A22, B21,stub5));
@@ -223,12 +223,12 @@ public class MatrixController {
                 C12 = addM(grpcMatrixMultiply(A11, B12,stub), grpcMatrixMultiply(A12, B22,stub));
                 C21 = addM(grpcMatrixMultiply(A21, B11,stub1), grpcMatrixMultiply(A22, B21,stub1));
                 C22 = addM(grpcMatrixMultiply(A21, B12,stub1), grpcMatrixMultiply(A22, B22,stub1));
-            }else{ */
+            }else{ 
                 C11 = addM(grpcMatrixMultiply(A11, B11,stub), grpcMatrixMultiply(A12, B21,stub));
                 C12 = addM(grpcMatrixMultiply(A11, B12,stub), grpcMatrixMultiply(A12, B22,stub));
                 C21 = addM(grpcMatrixMultiply(A21, B11,stub), grpcMatrixMultiply(A22, B21,stub));
                 C22 = addM(grpcMatrixMultiply(A21, B12,stub), grpcMatrixMultiply(A22, B22,stub));
-       //     }
+            }
            
 
             
