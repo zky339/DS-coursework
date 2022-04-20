@@ -1,9 +1,0 @@
-D:\Download\grpc-springboot-starter-master\grpc-springboot-starter-master\starter-server\target\generated-sources\protobuf\java\com\nemo\grpcstarterserver\ServerProto.java
-D:\Download\grpc-springboot-starter-master\grpc-springboot-starter-master\starter-server\target\generated-sources\protobuf\grpc-java\com\nemo\grpcstarterserver\MatrixServiceGrpc.java
-D:\Download\grpc-springboot-starter-master\grpc-springboot-starter-master\starter-server\target\generated-sources\protobuf\java\com\nemo\grpcstarterserver\MatrixRequest.java
-D:\Download\grpc-springboot-starter-master\grpc-springboot-starter-master\starter-server\src\main\java\com\nemo\grpcstarterserver\service\grpc\impl\MatrixServiceImpl.java
-D:\Download\grpc-springboot-starter-master\grpc-springboot-starter-master\starter-server\src\main\java\com\nemo\grpcstarterserver\ServerApplication.java
-D:\Download\grpc-springboot-starter-master\grpc-springboot-starter-master\starter-server\target\generated-sources\protobuf\java\com\nemo\grpcstarterserver\MatrixResponse.java
-D:\Download\grpc-springboot-starter-master\grpc-springboot-starter-master\starter-server\target\generated-sources\protobuf\java\com\nemo\grpcstarterserver\ServerEntityProto.java
-D:\Download\grpc-springboot-starter-master\grpc-springboot-starter-master\starter-server\target\generated-sources\protobuf\java\com\nemo\grpcstarterserver\MatrixResponseOrBuilder.java
-D:\Download\grpc-springboot-starter-master\grpc-springboot-starter-master\starter-server\target\generated-sources\protobuf\java\com\nemo\grpcstarterserver\MatrixRequestOrBuilder.java
